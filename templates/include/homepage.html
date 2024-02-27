@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!-- 
+   InfoFolio - Resume One Page HTML Template
+   Version: 1.0.0
+   Author: Webstrot
+   Copyright © 2024-25
+   -->
+<!--[if IE 8]> 
+<html lang="en" class="ie8 no-js">
+   <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx" dir="ltr">
+<!--[endif]-->
+<!-- heade start -->
+
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+   <title>{{ settings.title }}</title>
+
+   <!-- Template Style -->
+
+   <!-- favicon -->
+   <link rel="shortcut icon" type="image/png" href="{{settings.logo.url}}">
+
+   <!-- animation css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+
+   <!-- bootstrape css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+   <!-- font css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/fonts.css' %}">
+
+   <!-- font awesome css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+
+   <!-- owl slider carousel -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'css/owl.theme.default.min.css' %}">
+
+   <!-- porfolio popupe css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/glightbox.min.css' %}">
+
+   <!-- main css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+   <!-- font awesome icon css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/{% static 'css/font-awesome.min.css' %}">
+
+</head>
+<!-- heade end -->
+
+<body>
+    {% block content %}
+   <!-- Your content goes here -->
+{% endblock %}
+
+
+   <!-- common js -->
+   <script src="{% static 'js/jquery-3.6.4.min.js' %}"></script>
+   <!-- bootstrap js -->
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   <!-- wow js -->
+   <script src="{% static 'js/wow.min.js' %}"></script>
+   <!-- owl slider js -->
+   <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+   <!-- contact form js -->
+   <script src="{% static 'js/contact_form.js' %}"></script>
+   <!-- main js -->
+   <script src="{% static 'js/main.js' %}"></script>
+   <!-- Filter popupe js -->
+   <script src="{% static 'js/glightbox.min.js' %}"></script>
+   <!-- page js js -->
+   <script src="{% static 'js/portfolio3/port3.js' %}"></script>
+   <!-- animation js -->
+   <script src="{% static 'js/animation.js' %}"></script>
+</body>
+
+</html>
